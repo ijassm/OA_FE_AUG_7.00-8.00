@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <style>
+      /* Descendant selector(space) */
+
+      p span {
+        color: violet;
+      }
+
+      section p.para {
+        color: red;
+      }
+
+      /* Child selector(>) */
+
+      /* section > p {
+        color: red;
+      } */
+
+      /* Adjacent Sibling Selector(+) */
+      /* h1 + p {
+        font-size: 50px;
+        background-color: aqua;
+      } */
+
+      /* General Sibling Selector(~) */
+      /* h1 ~ p {
+        font-size: 50px;
+        background-color: aqua;
+      } */
+    </style>
+  </head>
+  <body>
+    <p>
+      <span>Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Ex
+      dignissimos eius, <span>voluptatibus</span> temporibus eveniet impedit
+      culpa unde asperiores. Dolorum saepe sint eos quas perspiciatis vitae nisi
+      a aperiam distinctio quidem.
+    </p>
+    <h1 class="title">Hello</h1>
+    <p class="subtitle">Hello</p>
+    <h2>Hello</h2>
+    <p>Hello</p>
+    <section>
+      <p class="para">outside article</p>
+      <article><p>Hi, How are you?</p></article>
+      <p>outside article</p>
+    </section>
+
+    <p>Hello Ocean</p>
+  </body>
+</html>
