@@ -1,0 +1,20 @@
+.youtube:visited {
+    color: red;
+}
+
+.youtube:link {
+    color: green;
+}
+
+.youtube:hover {
+    background-color: rgb(91, 0, 144);
+}
+
+.youtube:active {
+    background-color: black;
+}
+
+p:nth-child(1) {
+    color: aquamarine;
+}
+
