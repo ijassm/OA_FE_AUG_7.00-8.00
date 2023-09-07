@@ -7,6 +7,34 @@
         font-family: "Poppins", sans-serif;
       }
 
+      nav {
+        background-color: #24009a;
+        color: white;
+      }
+
+      .navbar {
+        align-items: center;
+      }
+
+      .navbar > .routes > * {
+        margin-inline: 10px;
+      }
+
+      .logo {
+        max-width: 80px;
+        padding-block: 15px;
+      }
+
+      .contact-btn {
+        background-color: white;
+        padding-inline: 20px;
+        padding-block: 10px;
+        color: #22018e;
+        cursor: pointer;
+        transition: all 0.5s;
+        border: 1px solid transparent;
+      }
+
       h1,
       h2,
       h3,
@@ -23,7 +51,6 @@
       }
 
       .max-width {
-        margin-block-start: 50px;
         margin-inline: auto;
         max-width: 1200px;
         width: 95%;
@@ -39,8 +66,10 @@
       }
 
       .title-section {
+        margin-block-start: 50px;
         flex-wrap: wrap;
         align-items: center;
+        gap: 20px;
         /* justify-content: space-between; */
       }
 
@@ -51,23 +80,55 @@
         transition: all 0.5s;
       }
 
+      .menu-btn {
+        display: none;
+        /* visibility: hidden; */
+      }
+
       .view-btn:hover {
         color: white;
         background-color: #22018e;
       }
 
-      .view-btn::selection {
+      .contact-btn:hover {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+
+      .view-btn::selection,
+      .contact-btn::selection {
         background-color: transparent;
       }
 
-      .view-btn:active {
+      .view-btn:active,
+      .contact-btn:active {
         scale: 1.1;
       }
 
       .card-section {
         margin-block: 50px;
-        max-width: 280px;
+        flex-basis: 280px;
+        /* padding: 10px; */
+        /* max-width: 280px; */
       }
+
+      /* .card-section:nth-of-type(1) {
+        order: 4;
+        background-color: #22018e2c;
+      }
+      .card-section:nth-of-type(2) {
+        order: 3;
+        background-color: #01648e69;
+      }
+      .card-section:nth-of-type(3) {
+        order: 2;
+        background-color: #858e0165;
+      }
+      .card-section:nth-of-type(4) {
+        order: 1;
+        background-color: #01728e;
+      } */
 
       .justify-between {
         justify-content: space-between;
@@ -75,11 +136,49 @@
 
       .card-section-container {
         flex-wrap: wrap;
+        /* flex-direction: row-reverse; */
         justify-content: center;
         gap: 20px;
       }
+
+      @media (max-width: 1220px) {
+        .card-section {
+          flex-basis: calc(50% - 10px);
+          max-width: 350px;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .navbar > .routes,
+        .navbar > .contact-btn {
+          display: none;
+        }
+
+        .navbar > .menu-btn {
+          display: block;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .card-section {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
     </style>
     <body>
+      <nav>
+        <section class="navbar max-width row justify-between">
+          <img class="logo" src="./images/logo.svg" alt="img" width="100%" />
+          <article class="routes">
+            <span>Home</span>
+            <span>Aboutus</span>
+            <span>Movies</span>
+          </article>
+          <div class="contact-btn">Contact</div>
+          <div class="menu-btn">Menu</div>
+        </section>
+      </nav>
       <main class="max-width">
         <section class="title-section row justify-between">
           <div class="col">
@@ -95,7 +194,7 @@
               alt="img"
               width="100%"
             />
-            <h3 class="card-section-title">Floyd Miles</h3>
+            <h3 class="card-section-title">Floyd Miles1</h3>
             <p>President of Sales</p>
             <section class="row justify-between">
               <p>4.5</p>
@@ -109,7 +208,7 @@
               alt="img"
               width="100%"
             />
-            <h3 class="card-section-title">Floyd Miles</h3>
+            <h3 class="card-section-title">Floyd Miles2</h3>
             <p>President of Sales</p>
             <section class="row justify-between">
               <p>4.5</p>
@@ -123,7 +222,7 @@
               alt="img"
               width="100%"
             />
-            <h3 class="card-section-title">Floyd Miles</h3>
+            <h3 class="card-section-title">Floyd Miles3</h3>
             <p>President of Sales</p>
             <section class="row justify-between">
               <p>4.5</p>
@@ -137,7 +236,7 @@
               alt="img"
               width="100%"
             />
-            <h3 class="card-section-title">Floyd Miles</h3>
+            <h3 class="card-section-title">Floyd Miles4</h3>
             <p>President of Sales</p>
             <section class="row justify-between">
               <p>4.5</p>
