@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <style>
+      .flex {
+        /* display: block; */
+        /* height: calc(100vh - 16px); */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        /* flex-wrap: wrap; */
+        gap: 10px;
+        background-color: rgba(127, 255, 212, 0.162);
+      }
+
+      .flex-item {
+        color: aliceblue;
+        padding: 10px;
+        background-color: black;
+        flex-grow: 1;
+        text-align: center;
+        /* flex-basis: 100px; */
+      }
+
+      /* .item1 {
+        order: 3;
+        align-self: flex-start;
+      } */
+
+      /* .item2 {
+        order: 4;
+        align-self: flex-start;
+      } */
+
+      /* .item3 {
+        order: 1;
+        align-self: flex-start;
+      } */
+
+      /* .item4 {
+        order: 2;
+        align-self: flex-start;
+      } */
+
+      @media (max-width: 800px) {
+        .flex {
+          flex-wrap: wrap;
+        }
+
+        .flex-item {
+          width: calc(50% - 40px);
+        }
+      }
+
+      @media (max-width: 500px) {
+        .flex-item {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex">
+      <div class="flex-item item1">flex-item1</div>
+      <div class="flex-item item2">flex-item2</div>
+      <div class="flex-item item3">flex-item3</div>
+      <div class="flex-item item4">flex-item4</div>
+    </main>
+  </body>
+</html>
