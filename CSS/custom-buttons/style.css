@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  min-height: 100vh;
+  margin: 0%;
+  font-family: "Mooli", sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  background-color: black;
+}
+
+[class~="btn"] {
+  background-color: cyan;
+  margin-block: 10px;
+  color: black;
+  padding-inline: 20px;
+  padding-block: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+[class~="btn"]:active {
+  scale: 1.1;
+}
+
+[class~="btn"]::selection {
+  background-color: transparent;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.swipe > *,
+.swipe-both > * {
+  position: relative;
+  z-index: 1;
+}
+
+.swipe::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0px;
+  top: 0%;
+  left: 0%;
+  background-color: chartreuse;
+  transition: all 0.4s;
+}
+
+.swipe:hover::before {
+  width: 100%;
+}
+
+.swipe:hover {
+  box-shadow: 0px 0px 20px rgba(128, 255, 0, 0.753);
+}
+
+.swipe-both::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0px;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(200, 255, 0);
+  transition: all 0.4s;
+}
+
+.swipe-both::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0px;
+  top: 0%;
+  right: 0%;
+  background-color: chartreuse;
+  transition: all 0.4s;
+}
+
+.swipe-both:hover::after,
+.swipe-both:hover::before {
+  width: 50%;
+}
+
+.shadow {
+  box-shadow: 0px 0px 0px cyan;
+  transition: all 0.4s;
+}
+
+.shadow:hover {
+  box-shadow: 10px 10px 0px chartreuse;
+}
