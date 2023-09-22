@@ -1,0 +1,10 @@
+.outer-box {
+  $box: $box + px;
+  @extend .center;
+  @include box($box, $box, $box1Color);
+  > .inner-box {
+    $box: 50px;
+    @extend .center;
+    @include box($box, $box, $box2Color);
+  }
+}

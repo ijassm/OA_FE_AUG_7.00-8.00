@@ -1,0 +1,13 @@
+@import "./variable";
+@import "./classes";
+@import "./mixins";
+@import "./outer-box";
+
+body {
+  margin: 0%;
+  width: auto;
+  min-height: 100vh;
+  background-color: $primary;
+  @extend .center;
+  @extend .outer-box;
+}
