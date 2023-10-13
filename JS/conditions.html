@@ -1,0 +1,28 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      //   console.log("hello \n".repeat(5));
+
+      var light = parseInt(prompt("Light - ON - 1/OFF - 0"));
+
+      if (light == 1) {
+        var voltage = prompt(
+          "Enter your voltage Above 200V - Y / Lessthan 100V - N"
+        );
+
+        if (voltage == "Y") {
+          console.log("💡");
+        } else {
+          console.log(
+            "you should check with your voltage safely with electrician"
+          );
+        }
+      } else if (light == 0) {
+        console.log("bulb off");
+      } else {
+        console.log("invalid");
+      }
+    </script>
+  </body>
+</html>
