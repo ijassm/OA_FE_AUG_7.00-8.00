@@ -1,0 +1,81 @@
+<html>
+  <body>
+    <script>
+      // Date object
+      // new Date()
+      // new Date(milliseconds)
+      // new Date(dataString)
+      // new Date(year, month, date, hour, minute, second, millisecond)
+      var date = new Date();
+      var newDate = new Date(2002, 11, 16);
+      var month = [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec",
+      ];
+
+      var day = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+
+      console.log(date);
+      console.log(typeof date);
+      console.log(date.getDate());
+      console.log(date.getMonth());
+      console.log(month[date.getMonth()]);
+      console.log(date.getFullYear());
+      console.log("");
+      console.log(date.getDay());
+      console.log(day[date.getDay()]);
+      console.log(date.getHours());
+      console.log(date.getMinutes());
+      console.log(date.getSeconds());
+      console.log(date.getMilliseconds());
+
+      console.log("new date obj");
+      console.log(newDate);
+      console.log(typeof newDate);
+      console.log(newDate.getFullYear());
+
+      var style = `style='text-align: center; color: red'`;
+
+      document.write(`<h1 ${style}>&#128512;✌Good Morning</h1>`);
+      switch (date.getDay()) {
+        case 0:
+          document.write(`<h2 ${style}>Today is Sunday</h2>`);
+          break;
+
+        case 1:
+          document.write(`<h2 ${style}>Today is Monday</h2>`);
+          break;
+
+        case 2:
+          document.write(`<h2 ${style}>Today is Tuesday</h2>`);
+          break;
+
+        case 3:
+          document.write(`<h2 ${style}>Today is Wednesday</h2>`);
+          break;
+
+        case 4:
+          document.write(`<h2 ${style}>Today is Thursday</h2>`);
+          break;
+
+        case 5:
+          document.write(`<h2 ${style}>Today is Friday</h2>`);
+          break;
+
+        default:
+          document.write(`<h2 ${style}>Today is Saturday</h2>`);
+          break;
+      }
+    </script>
+  </body>
+</html>
