@@ -1,24 +1,41 @@
-// function declaration
-function greeting() {
-    console.log("hello");
-}
+// function declaration or function statement
+// function greeting() {
+//     console.log("hello");
+// }
 
 // function expression
-const a = greeting;
-const anonymousFunc = function () {
-    console.log("anonymousFunc is called");
-};
+// named function
+// const a = function greeting() {
+//     console.log("hello");
+// };
+// anonymousFunc
+// const anonymousFunc = function () {
+//     console.log("anonymousFunc is called");
+// };
 
-a();
+// a();
 
-anonymousFunc();
+// anonymousFunc();
 
-greeting();
+// greeting();
 
 // Arrow Function(ES6)2015
 
-const arrow = () => {
-    console.log("arrow func is called");
-}
+// const arrow = () => {
+//     console.log("arrow func is called");
+// }
 
-arrow()
+// arrow()
+
+// 1. Diff between function expression vs function declaration
+// 2. What is Higher Order Function
+// 3. First class Function/ First class Citizen
+// 4. create sum function return number value
+
+// sum([3,4,6,8,9]) => sum of the number
+
+// 5. Parenthesis Checker
+//  parenthesisChecker({([])}) => True
+
+// { ([]) } => True
+// { ([()])) } => False
