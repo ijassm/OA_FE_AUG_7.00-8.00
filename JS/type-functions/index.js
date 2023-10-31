@@ -28,6 +28,27 @@
 // arrow()
 
 // 1. Diff between function expression vs function declaration
+
+console.log(greeting("imran"));
+
+function greeting(name) {
+    return "Hello " + name;
+}
+
+
+console.log(greeting("ocean"), "---");
+
+console.log(addNum);
+
+// functions acts as a value
+
+var addNum = function (a, b) {
+    return a + b;
+}
+
+console.log(addNum(2, 3));
+
+
 // 2. What is Higher Order Function
 // 3. First class Function/ First class Citizen
 // 4. create sum function return number value
