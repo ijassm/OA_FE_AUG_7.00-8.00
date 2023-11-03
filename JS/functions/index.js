@@ -146,21 +146,70 @@ function myMap(arr, cb) {
 // }
 
 
-const d = myMap(arr, (value) => value * 2);
-const t = myMap(arr, (value) => value * 3);
-const m = arr.map((value) => value * 3);
-const f = arr.filter((value) => value % 2 == 0);
+// const d = myMap(arr, (value) => value * 2);
+// const t = myMap(arr, (value) => value * 3);
+// const m = arr.map((value) => value * 3);
+// const f = arr.filter((value) => value % 2 == 0);
 
 // const t = myMap(arr, triple)
 
 // const d = myMap(arr, double)
 // const t = myMap(arr, triple)
 
-console.log(d);
-console.log(t);
-console.log(m);
-console.log(f);
+// console.log(d);
+// console.log(t);
+// console.log(m);
+// console.log(f);
+
 // 3. First class Function/ First class Citizen
+
+// if functions in that language are treated like other variables
+
+// const obj = {
+//     fname: "ocean",
+//     lname: "academy",
+//     fullname: function fullname() {
+//         return this.fname + " " + this.lname;
+//         // console.log(this);
+//     }
+// }
+
+// const obj = {
+//     fname: "ocean",
+//     lname: "academy",
+//     fullname() {
+//         return this.fname + " " + this.lname;
+//         // console.log(this);
+//     }
+// }
+
+// var fname = "ghk";
+// var lname = "fkgh";
+
+// const obj = {
+//     fname: "ocean",
+//     lname: "academy",
+//     fullname: () => {
+//         // console.log(this, "this");
+//         return this.fname + " " + this.lname;
+//     }
+// }
+
+
+// console.log(obj)
+
+
+// function func() {
+//     console.log("hello");
+// }
+
+// func.name = "abc";
+
+// console.log(func);
+// console.log(func.name);
+// func()
+
+
 // 4. create sum function return number value
 
 // sum([3,4,6,8,9]) => sum of the number
@@ -170,3 +219,5 @@ console.log(f);
 
 // { ([]) } => True
 // { ([()])) } => False
+
+

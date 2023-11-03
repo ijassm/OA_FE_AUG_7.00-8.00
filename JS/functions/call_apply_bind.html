@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <h1 id="heading" onclick="trigger(this)">hello</h1>
+    <script>
+      // call apply bind
+
+      const obj1 = {
+        fname: "ocean",
+        lname: "academy",
+      };
+
+      const obj2 = {
+        fname: "abc",
+        lname: "dge",
+      };
+
+      //   const fullname = function (age, loc) {
+      //     console.log(this);
+      //     console.log(age);
+      //     console.log(loc);
+      //   };
+
+      //   fullname.call(obj1, 12, "pondy");
+      //   fullname.call(obj2, 25, "chennai");
+
+      //   const fullname = function (age, loc) {
+      //     console.log(this);
+      //     console.log(age);
+      //     console.log(loc);
+      //   };
+
+      //   fullname.apply(obj1, [12, "pondy", 8435]);
+      //   fullname.apply(obj2, [25, "chennai", 4375]);
+
+      function trigger(e) {
+        console.log(e.style);
+        e.style.color = "red";
+        // e.style.backgroundColor = "red";
+        e.textContent = "color changed to red";
+      }
+    </script>
+  </body>
+</html>
