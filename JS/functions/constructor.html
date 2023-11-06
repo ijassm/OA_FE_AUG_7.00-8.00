@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <script>
+      // constructor func
+
+      //   function Person(name, age) {
+      //     this.name = name;
+      //     this.age = age;
+      //     this.getCurentDate = function () {
+      //       return Date();
+      //     };
+      //   }
+
+      //   const obj1 = new Person("xyz", 12);
+      //   const obj2 = new Person("abc", 10);
+
+      //   console.log(typeof obj1);
+      //   console.log(typeof obj2);
+      //   console.log(obj1.getCurentDate());
+      //   console.log(obj2);
+
+      // factory func
+      function Person(name, age) {
+        return {
+          name: name,
+          age: age,
+          getCurentDate: function () {
+            return Date();
+          },
+        };
+      }
+
+      const obj1 = Person("xyz", 12);
+      const obj2 = Person("abc", 10);
+
+      console.log(typeof obj1);
+      console.log(typeof obj2);
+      console.log(obj1.getCurentDate());
+      console.log(obj1);
+      console.log(obj2);
+    </script>
+  </body>
+</html>
