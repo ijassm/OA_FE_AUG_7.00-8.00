@@ -60,3 +60,10 @@ function multiply(a) {
 
 
 // count()
+
+
+// console.log(sum(2)(3)(5)(2)(5)(6)());
+// console.log(sum(2)(3)(5)(2)(5());
+// console.log(sum(2)(3)(5)(2)());
+// console.log(sum(2)(3)(5)());
+// console.log(sum(2)(3)());
