@@ -92,6 +92,7 @@ const database = [
         "name": "Kevin Brown",
         "address": "111 Pinecrest Road, Downtown, State, 61724"
     }
+
 ]
 
 
@@ -104,24 +105,25 @@ function createObject(name, designation) {
 
 
 function submit() {
-    const row = doc.querySelector(".row");
     const name = doc.querySelector("#name").value;
     const designation = doc.querySelector("#designation").value;
-    // row.appendChild(newCardComponent(name, designation));
-    database.push(createObject(name, designation));
+    const newObject = createObject(name, designation);
+    database.push(newObject);
     render(database);
     console.log(database);
 }
 
-function newCardComponent(name, designation) {
-    const card = doc.createElement("main");
-    card.innerHTML = `<h1>Name : ${name}</h1>
-    <h2>Designation : ${designation}</h2>`
-    return card;
-}
+// function newCardComponent1(name, designation) {
+//     const card = doc.createElement("main");
+//     card.classList.add("new-card");
+//     card.innerHTML = `<h1>Name : ${name}</h1>
+//     <h2>Designation : ${designation}</h2>`
+//     return card;
+// }
 
-function newCardComponent2(name, address) {
+function newCardComponent(name, address) {
     const card = doc.createElement("main");
+    card.classList.add("old-card");
     card.innerHTML = `<h1>Name : ${name}</h1>
     <h2>Address : ${address}</h2>`
     return card;
@@ -129,10 +131,13 @@ function newCardComponent2(name, address) {
 
 const row = doc.querySelector(".row");
 
+
+// It loops your UI based on your data
+
 function render(dataLayer) {
     dataLayer.map((data) => {
-        row.appendChild(newCardComponent2(data.name, data.address));
-
+        const newCard = newCardComponent(data.name, data.address);
+        row.appendChild(newCard);
     })
 }
 

@@ -7,16 +7,38 @@
     <style>
       .row {
         display: flex;
+        width: 95%;
+        max-width: 1200px;
         flex-wrap: wrap;
+        /* justify-content: center; */
+        margin-inline: auto;
+        margin-block: 30px;
         gap: 20px;
+      }
+
+      .old-card {
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 12px;
+        flex-grow: 1;
+        flex-basis: 250px;
+      }
+
+      .new-card {
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 12px;
+        flex-grow: 1;
+        flex-basis: 250px;
       }
     </style>
   </head>
   <body>
-    <label for="">Name</label>
+    <label for="name">Name</label>
     <input id="name" type="text" />
-    <label for="">designation</label>
+    <label for="designation">designation</label>
     <input id="designation" type="text" />
+
     <button onclick="submit()">Add Person</button>
     <main class="row"></main>
     <script src="index.js"></script>
