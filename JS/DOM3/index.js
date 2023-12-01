@@ -103,14 +103,18 @@ function createObject(name, designation) {
     };
 }
 
+function updateUI(data) {
+    console.log(data);
+    const newCard = newCardComponent(data.name, data.address);
+    row.appendChild(newCard);
+}
+
 
 function submit() {
     const name = doc.querySelector("#name").value;
     const designation = doc.querySelector("#designation").value;
     const newObject = createObject(name, designation);
-    database.push(newObject);
-    render(database);
-    console.log(database);
+    updateUI(newObject);
 }
 
 // function newCardComponent1(name, designation) {
@@ -140,5 +144,7 @@ function render(dataLayer) {
         row.appendChild(newCard);
     })
 }
+
+
 
 render(database)

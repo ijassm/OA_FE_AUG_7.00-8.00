@@ -1,0 +1,10 @@
+console.log(window.sessionStorage);
+// sessionStorage.setItem("name", "ocean");
+// sessionStorage.setItem("age", 12);
+// console.log(sessionStorage.getItem("name"));
+// console.log(sessionStorage.getItem("age"));
+// console.log(sessionStorage.clear());
+// console.log(sessionStorage.length);
+// sessionStorage.removeItem('name');
+// sessionStorage.removeItem('age');
+// sessionStorage.removeItem('age');
